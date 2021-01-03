@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>
+orglogin
+</title>
+<style>
+body
+{
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1
+{
+font-family: "Times New Roman", Times, serif;
+color: red;
+font-size: 50px;
+font-family: lucida sans unicode;
+width: 100%;
+font-align: center;
+}
+form
+{
+font-size: 25px;
+color: blue;
+font-weight: bold;
+font-family: lucida sans unicode;
+}
+.loginform
+{
+border-radius: 25px;
+background: rgba(220,238,155,1);
+background: -moz-linear-gradient(left, rgba(220,238,155,1) 0%, rgba(208,242,13,1) 50%, rgba(224,238,165,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(220,238,155,1)), color-stop(50%, rgba(208,242,13,1)), color-stop(100%, rgba(224,238,165,1)));
+background: -webkit-linear-gradient(left, rgba(220,238,155,1) 0%, rgba(208,242,13,1) 50%, rgba(224,238,165,1) 100%);
+background: -o-linear-gradient(left, rgba(220,238,155,1) 0%, rgba(208,242,13,1) 50%, rgba(224,238,165,1) 100%);
+background: -ms-linear-gradient(left, rgba(220,238,155,1) 0%, rgba(208,242,13,1) 50%, rgba(224,238,165,1) 100%);
+background: linear-gradient(to right, rgba(220,238,155,1) 0%, rgba(208,242,13,1) 50%, rgba(224,238,165,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcee9b', endColorstr='#e0eea5', GradientType=1 );
+margin: auto;
+width: 40%;
+padding: 10px;
+height: 100%;
+}
+.login
+{
+background-color: white;
+}
+input[type=submit] {
+ 
+ background-color: green;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 26px;
+  
+}
+
+ input[type=text] {
+  width: 210px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+ input[type=number] {
+  width: 210px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+input[type=password] {
+  width: 210px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+</style>
+</head>
+<body background="backbl.jpg" align="center">
+<div class="login">
+<img src="logo.png" align="left" height="15%">
+<h1>LOGIN FORM</h1>
+<br>
+</div>
+<br>
+<div class="loginform">
+<form name="myform" action="org.php" method="post">
+Name of the organisation:
+<br>
+<input type="text"  id="name" name="name" placeholder="Name..." required>
+<br>
+Contact details:
+<br>
+<input type="number" name="cont" required>
+<br>
+Address:
+<br>
+<input type="text" name="address" required>
+<br>
+Area of Intrest:
+<br>
+<input type="radio" name="area" value="Food">Food
+<input type="radio" name="area" value="lifestyle">lifestyle
+<input type="radio" name="area" value="sport">sport
+<input type="radio" name="area" value="fashion">fashion<br>
+Enter your password:<br>
+<input type="password" id="pass" name="pass" required>
+<br>
+Confirm your password:<br>
+<input type="password" name="cpass" required>
+<br><br>
+<input type="Submit" value="Submit">
+</body>
+</div>
+</html>
